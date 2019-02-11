@@ -1,0 +1,19 @@
+---
+title: "What are degrees of freedom?"
+author: "Dr. Maria Tackett"
+date: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning=FALSE,
+                      message=FALSE)
+```
+
+
+```{r include=FALSE}
+library(tidyverse)
+```
+
+In short, the **degrees of freedom** are the number of observations that are allowed to freely vary when calculating a statistic. They occur [Wikipedia](https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics))

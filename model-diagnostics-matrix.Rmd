@@ -1,0 +1,21 @@
+---
+title: "Linear Algebra Approach to Regression"
+author: "Maria Tackett"
+date: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning=FALSE,
+                      message=FALSE)
+```
+
+## Set up
+
+## Estimating coefficients
+
+## Regression variance
+
+## Model diagnostics
+
