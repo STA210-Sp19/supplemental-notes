@@ -1,5 +1,5 @@
 ---
-title: "Matrix Form of Linear Regression"
+title: "Log Tranformations in Linear Regression"
 author: ""
 date: ""
 header_include: 
