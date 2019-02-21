@@ -127,7 +127,13 @@ Var(\mathbf{e}) &= \mathbf{e}\mathbf{e}^T \\[10pt]
 
 where $\hat{\sigma}^2 = \frac{\sum_{i=1}^{n}e_i^2}{n-p-1}$ is the estimated regression variance. Thus, the variance of the $i^{th}$ residual is $Var(e_i) = \hat{\sigma}^2(1-h_{ii})$. Therefore, the higher the leverage, the smaller the variance of the residual. Because the expected value of the residuals is 0, we conclude that points with high leverage tend to have smaller residuals than points with lower leverage.
 
+## Standardized Residuals 
 
+[to be added]
+
+## Cook's Distance
+
+[to be added]
 
 
 
