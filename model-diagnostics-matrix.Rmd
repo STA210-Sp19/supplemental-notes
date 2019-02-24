@@ -133,14 +133,28 @@ In general, we standardize a value by shifting by the expected value and rescali
 
 $$std.res_i = \frac{e_i - E(e_i)}{SE(e_i)}$$
 
-The expected value of the residuals is 0, i.e. $E(e_i) = 0$. From the previous section, the standard error of the residual is $SE(e_i) = \hat{\sigma}\sqrt{1-h_{ii}}$. Therefore, 
+The expected value of the residuals is 0, i.e. $E(e_i) = 0$. From (\ref{resid-var}), the standard error of the residual is $SE(e_i) = \hat{\sigma}\sqrt{1-h_{ii}}$. Therefore, 
 
-$$std.res_i = \frac{e_i}{\hat{\sigma}\sqrt{1-h_{ii}}}$$
+\begin{equation}
+\label{std.resid.}
+std.res_i = \frac{e_i}{\hat{\sigma}\sqrt{1-h_{ii}}}
+\end{equation}
 
 ## Cook's Distance
 
-[to be added]
+Cook's distance is a measure of how much each observation influences the model coefficients, and thus the predicted values. The Cook's distance for the $i^{th}$ observation can be written as 
 
+\begin{equation}
+\label{cooksd}
+D_i = \frac{(\hat{\mathbf{Y}} -\hat{\mathbf{Y}}_{(i)})^T(\hat{\mathbf{Y}} -\hat{\mathbf{Y}}_{(i)})}{(p+1)\hat{\sigma}}
+\end{equation}
+
+where $\hat{\mathbf{Y}}_{(i)}$ is the vector of predicted values from the model fitted when the $i^{th}$ observation is deleted. Cook's Distance can be calculated without deleting observations one at a time, since (\ref{cooksd-v2}) below is mathematically equivalent to  (\ref{cooksd}). 
+
+\begin{equation}
+\label{cooksd-v2}
+D_i = \frac{1}{p+1}std.res_i^2\Bigg[\frac{h_{ii}}{(1-h_{ii})}\Bigg] = \frac{e_i^2}{(p+1)\hat{\sigma}^2(1-h_{ii})}\Bigg[\frac{h_{ii}}{(1-h_{ii})}\Bigg]
+\end{equation}
 
 
 
