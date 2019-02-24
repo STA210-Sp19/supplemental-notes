@@ -129,7 +129,13 @@ where $\hat{\sigma}^2 = \frac{\sum_{i=1}^{n}e_i^2}{n-p-1}$ is the estimated regr
 
 ## Standardized Residuals 
 
-[to be added]
+In general, we standardize a value by shifting by the expected value and rescaling by the standard deviation (or standard error). Thus, the $i^{th}$ standardized residual takes the form 
+
+$$std.res_i = \frac{e_i - E(e_i)}{SE(e_i)}$$
+
+The expected value of the residuals is 0, i.e. $E(e_i) = 0$. From the previous section, the standard error of the residual is $SE(e_i) = \hat{\sigma}\sqrt{1-h_{ii}}$. Therefore, 
+
+$$std.res_i = \frac{e_i}{\hat{\sigma}\sqrt{1-h_{ii}}}$$
 
 ## Cook's Distance
 
