@@ -21,7 +21,7 @@ Let $\mathbf{Y}$ be $n \times 1$ matrix of responses, $\mathbf{X}$, the $n \time
 
 \begin{equation}
 \label{norm-assumption}
-\mathbf{Y} ~ N(\mathbf{X}\boldsymbol{\beta}, \sigma^2)
+\mathbf{Y} \sim N(\mathbf{X}\boldsymbol{\beta}, \sigma^2)
 \end{equation}
 
 When we do linear regression, our goal is to estimate the unknown parameters $\boldsymbol{\beta}$ and $\sigma^2$ from (\ref{norm-assumption}). In [Matrix Form of Linear Regression](https://github.com/STA210-Sp19/supplemental-notes/blob/master/regression-basics-matrix.pdf), we showed a way to estimate these parameters using matrix alegbra. Another approach for estimating $\boldsymbol{\beta}$ and $\sigma^2$ is using *maximum likelihood estimation*.
@@ -56,7 +56,7 @@ where $RSS$ is the residual sum of squares. Note that the maximum likelihood est
 
 ## AIC 
 
-Akaike's Information Criterion is 
+Akaike's Information Criterion (AIC) is 
 
 \begin{equation}
 \label{aic}
@@ -77,8 +77,7 @@ AIC &= -2 \log L + 2(p+1) \\[10pt]
 
 ## BIC 
 
-[---add calculation for BIC---]
-
+[---]
 
 
 
